@@ -13,5 +13,6 @@ RUN npm install
 # COPY index.js
 COPY ./index.js .
 
-ENTRYPOINT ['node']
-CMD ['index.js']
+RUN node -v
+
+CMD ['node','index.js']
